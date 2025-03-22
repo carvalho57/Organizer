@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Organizer": {
+      "commandName": "Project",
+      "commandLineArgs": "data -o . -d teste"
+    }
+  }
+}
