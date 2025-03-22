@@ -1,5 +1,6 @@
 ﻿using Organizer.Commands;
 using System.CommandLine;
+using System.CommandLine.Builder;
 using System.CommandLine.Parsing;
 
 namespace Organizer
@@ -19,8 +20,8 @@ namespace Organizer
 
             """);
 
-            rootCommand.AddCommand(new OrganizeByDate().Create());
-            rootCommand.AddCommand(new OrganizeByType().Create());
+            rootCommand.AddCommand(new OrganizeByDateCommand());
+            rootCommand.AddCommand(new OrganizeByTypeCommand());
 
             return await rootCommand.InvokeAsync(args).ConfigureAwait(false);
 

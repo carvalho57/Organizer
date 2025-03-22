@@ -7,7 +7,7 @@ namespace Organizer.Commands.Options
         public static Option<DirectoryInfo> Get()
         {
             var option = new Option<DirectoryInfo>(
-              aliases: ["--origem", "-o"],
+              aliases: ["--origem", "--source", "-o"],
               description: "O diretório de origem, que contém os arquivos para serem organizados"
             );
             option.IsRequired = true;

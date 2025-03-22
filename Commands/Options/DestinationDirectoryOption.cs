@@ -7,7 +7,7 @@ namespace Organizer.Commands.Options
         public static Option<DirectoryInfo> Get()
         {
             var option =  new Option<DirectoryInfo>(
-                aliases: ["--destino", "-d"],
+                aliases: ["--destino", "--destination","-d"],
                 description: "O diretório de destino, onde os arquivos serão copiados ou movidos",
                 getDefaultValue: () =>
                 {
